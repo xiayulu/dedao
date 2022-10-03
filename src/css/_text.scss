@@ -1,0 +1,5 @@
+@use "vars";
+
+.text-sm {
+  font-size: var(--#{vars.$prefix}text-sm);
+}

@@ -1,8 +1,16 @@
+@use "vars";
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
+}
+
+html {
+  color: var(--#{vars.$prefix}primary);
 }
