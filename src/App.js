@@ -1,7 +1,6 @@
 import Footer from "./ui/footer/Footer";
 import Header from "./ui/header/Header";
 
-
 function App() {
   return (
     <div>
