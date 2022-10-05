@@ -227,13 +227,7 @@ $utilities: map-merge(
     "height": (
       property: height,
       class: h,
-      values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto,
-      ),
+      values: map-merge($spacers, ()),
     ),
     "max-height": (
       property: max-height,

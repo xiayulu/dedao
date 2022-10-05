@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div className="w-3f12">
           <h5 className="fs-lg mb-4">了解更多：</h5>
-          <div className="d-flex">
+          <div className="d-flex justify-content-between">
             <figure>
               <img
                 alt="得到App"
@@ -45,7 +45,9 @@ export default function Footer() {
                 src="data:image/png;base64,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"
                 lazy="loaded"
               />
-              <figcaption className="qrcode-desc">下载「得到App」</figcaption>
+              <figcaption className="fs-xs lh-xl bg-chief text-white rounded text-center h-5 w-25 my-2">
+                下载「得到App」
+              </figcaption>
             </figure>
             <figure className="">
               <img
@@ -53,7 +55,7 @@ export default function Footer() {
                 alt="得到公众号"
                 className="w-25"
               />
-              <figcaption className="qrcode-desc qrcode-follow-bg iget-common-f6 iget-common-c9">
+              <figcaption className="fs-xs lh-xl bg-success text-white rounded text-center h-5 w-25 my-2">
                 关注微信公众号
               </figcaption>
             </figure>
