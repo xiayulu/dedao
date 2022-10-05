@@ -67,8 +67,6 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$utilities-bg-colors: () !default;
-
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio: 4.5 !default;
@@ -326,6 +324,13 @@ $theme-colors: (
   "dark": $dark,
 ) !default;
 // scss-docs-end theme-colors-map
+
+$utilities-bg-colors: (
+  white: #fff,
+  primary-1: #fafafa,
+  primary-2: #f8f8f8,
+  primary-3: #f3f3f3,
+) !default;
 
 // Characters which are escaped by the escape-svg function
 $escaped-characters: (
