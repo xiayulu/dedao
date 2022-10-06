@@ -62,53 +62,55 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="permits">
-        <p className="detail iget-common-f6 iget-common-c2">
-          <span className="detail-item">社会信用代码 91110108662186561M</span>
-          <span className="detail-item">
-            出版物经营许可证 新出发京零字第海200073号
-          </span>
-          <span className="detail-item">
-            广播电视节目制作经营许可证 （京）字第01204号
-          </span>
-          <span className="detail-item">
-            增值电信业务经营许可证 京ICP证090644号
-          </span>
-          <span className="detail-item detail-noline detail-item-hover">
+      <div className="d-flex flex-column justify-content-center align-items-center fs-xs pt-16 pb-10">
+        <p className="lh-xl m-1">
+          <span>社会信用代码 91110108662186561M</span>
+          <span className="mx-2">|</span>
+          <span>出版物经营许可证 新出发京零字第海200073号</span>
+          <span className="mx-2">|</span>
+          <span>广播电视节目制作经营许可证 （京）字第01204号</span>
+          <span className="mx-2">|</span>
+          <span>增值电信业务经营许可证 京ICP证090644号</span>
+          <span className="mx-2">|</span>
+          <a href="#!" target="_blank" className="link-text">
             信息网络传播视听节目许可证 0110567
-          </span>
+          </a>
         </p>
-        <p className="detail iget-common-f6 iget-common-c2">
+        <p className="mb-1">
           <a
             href="https://zt.igetget.com/visual/1Onn4gr8OJT0QjGzq0O6.html"
-            target="_blank"
-            className="detail-item">
+            className="link-text">
             用户协议
           </a>
+          <span className="mx-2">|</span>
           <a
             href="https://www.igetget.com/html/p/9MGZRxz/QlqnY8M8RzcKWG77q7Ln.html"
             target="_blank"
-            className="detail-item">
+            className="link-text">
             隐私政策
           </a>
-          <a href="javaScript:;" className="detail-item">
+          <span className="mx-2">|</span>
+          <a href="javaScript:;" className="link-text">
             知识产权声明
           </a>
+          <span className="mx-2">|</span>
           <a
             href="https://beian.miit.gov.cn"
             target="_blank"
-            className="detail-item">
+            className="link-text">
             京ICP备05039090号-10
           </a>
+          <span className="mx-2">|</span>
           <a
             href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502042303"
             target="_blank"
-            className="detail-item detail-noline">
+            className="link-text">
             京公网安备 11010502042303号
           </a>
         </p>
-        <p className="detail iget-common-f6 iget-common-c2">
-          <span className="detail-item">北京优视米网络科技有限公司</span>
+        <p>
+          <span>北京优视米网络科技有限公司</span>
+          <span className="mx-2">|</span>
           <span>Copyright © 2022 All rights reserved</span>
         </p>
       </div>
