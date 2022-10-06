@@ -3,9 +3,9 @@ import Header from "./ui/header/Header";
 
 function App() {
   return (
-    <div>
+    <div className="bg-primary-1">
       <Header></Header>
-      <main>内容</main>
+      <main className="mt-16">内容</main>
       <Footer></Footer>
     </div>
   );
