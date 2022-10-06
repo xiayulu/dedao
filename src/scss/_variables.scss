@@ -415,6 +415,7 @@ $spacers: (
   24: 6rem,
   25: 6.25rem,
   28: 7rem,
+  44: 11rem,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -613,16 +614,28 @@ $h6-font-size: $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  xs: 0.75rem,
-  sm: 0.875rem,
-  base: 1rem,
-  lg: 1.125rem,
-  xl: 1.25rem,
-  2xl: 1.5rem,
-  3xl: 1.875rem,
-  4xl: 2.25rem,
-  5xl: 3rem,
-  6xl: 3.75rem,
+  1: 0.75rem,
+  //12px
+  2: 0.875rem,
+  //14px
+  3: 1rem,
+  //16px
+  4: 1.125rem,
+  // 18px
+  5: 1.25rem,
+  // 20px
+  7: 1.5rem,
+  // 24px
+  11: 1.875rem,
+  // 32px
+  13: 2.25rem,
+  // 36px
+  15: 2.5rem,
+  // 40px
+  19: 3rem,
+  // 48px
+  25: 3.75rem,
+  //60px
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1209,9 +1222,9 @@ $dropdown-divider-bg: $dropdown-border-color !default;
 $dropdown-divider-margin-y: $spacer * 0.5 !default;
 $dropdown-box-shadow: $box-shadow !default;
 
-$dropdown-link-color: $gray-900 !default;
+$dropdown-link-color: $chief !default;
 $dropdown-link-hover-color: shade-color($dropdown-link-color, 10%) !default;
-$dropdown-link-hover-bg: $gray-200 !default;
+$dropdown-link-hover-bg: rgb(255, 107, 0, 0.05) !default;
 
 $dropdown-link-active-color: $component-active-color !default;
 $dropdown-link-active-bg: $component-active-bg !default;

@@ -50,17 +50,11 @@
   z-index: var(--#{$prefix}dropdown-zindex);
   display: none; // none by default, but block on "open" of the menu
   min-width: var(--#{$prefix}dropdown-min-width);
-  padding: var(--#{$prefix}dropdown-padding-y) var(--#{$prefix}dropdown-padding-x);
+  padding: 0;
   margin: 0; // Override default margin of ul
-  @include font-size(var(--#{$prefix}dropdown-font-size));
-  color: var(--#{$prefix}dropdown-color);
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
-  background-color: var(--#{$prefix}dropdown-bg);
   background-clip: padding-box;
-  border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
-  @include border-radius(var(--#{$prefix}dropdown-border-radius));
-  @include box-shadow(var(--#{$prefix}dropdown-box-shadow));
 
   &[data-bs-popper] {
     top: 100%;
@@ -75,9 +69,10 @@
     }
     > .dropdown-item:last-child,
     > li:last-child .dropdown-item {
-      @include border-bottom-radius(var(--#{$prefix}dropdown-inner-border-radius));
+      @include border-bottom-radius(
+        var(--#{$prefix}dropdown-inner-border-radius)
+      );
     }
-
   }
 }
 
@@ -126,18 +121,15 @@
 }
 
 .dropend {
-  .dropdown-menu[data-bs-popper] {
+  .dropdown-menu {
     top: 0;
     right: auto;
     left: 100%;
     margin-top: 0;
-    margin-left: var(--#{$prefix}dropdown-spacer);
-  }
+    margin-left: 0;
 
-  .dropdown-toggle {
-    @include caret(end);
-    &::after {
-      vertical-align: 0;
+    &:hover {
+      display: block;
     }
   }
 }
@@ -159,6 +151,12 @@
   }
 }
 
+.dropdown-link {
+  &:focus,
+  &:hover {
+    background-color: var(--#{$prefix}dropdown-link-hover-bg);
+  }
+}
 
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
@@ -175,7 +173,8 @@
 .dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: var(--#{$prefix}dropdown-item-padding-y) var(--#{$prefix}dropdown-item-padding-x);
+  padding: var(--#{$prefix}dropdown-item-padding-y)
+    var(--#{$prefix}dropdown-item-padding-x);
   clear: both;
   font-weight: $font-weight-normal;
   color: var(--#{$prefix}dropdown-link-color);
@@ -216,7 +215,8 @@
 // Dropdown section headers
 .dropdown-header {
   display: block;
-  padding: var(--#{$prefix}dropdown-header-padding-y) var(--#{$prefix}dropdown-header-padding-x);
+  padding: var(--#{$prefix}dropdown-header-padding-y)
+    var(--#{$prefix}dropdown-header-padding-x);
   margin-bottom: 0; // for use with heading elements
   @include font-size($font-size-sm);
   color: var(--#{$prefix}dropdown-header-color);
@@ -226,7 +226,8 @@
 // Dropdown text
 .dropdown-item-text {
   display: block;
-  padding: var(--#{$prefix}dropdown-item-padding-y) var(--#{$prefix}dropdown-item-padding-x);
+  padding: var(--#{$prefix}dropdown-item-padding-y)
+    var(--#{$prefix}dropdown-item-padding-x);
   color: var(--#{$prefix}dropdown-link-color);
 }
 

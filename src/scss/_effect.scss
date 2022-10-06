@@ -1,0 +1,21 @@
+@each $color, $value in $theme-colors {
+  $color-rgb: to-rgb($value);
+
+  .hv-bg-#{$color} {
+    &:hover {
+      background-color: RGBA($color-rgb, 0.05)
+        if($enable-important-utilities, !important, null);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  $color-rgb: to-rgb($value);
+
+  .hv-#{$color} {
+    &:hover {
+      color: RGBA($color-rgb, 1)
+        if($enable-important-utilities, !important, null);
+    }
+  }
+}
