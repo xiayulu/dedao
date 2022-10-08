@@ -1,11 +1,12 @@
 import LiveCard from "./Card";
+import PartHeader from "./Header";
 
 export default function Live() {
   return (
     <div>
-      <h1>精彩直播</h1>
-      <h4>直播都用大屏看，沉浸式学习享受</h4>
-
+      <PartHeader
+        title={"精彩直播"}
+        detail={"直播都用大屏看，沉浸式学习享受"}></PartHeader>
       <div className="mw-header d-flex mx-auto">
         {data.map((item, index) => (
           <LiveCard key={index}></LiveCard>

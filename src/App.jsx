@@ -2,7 +2,7 @@ import Carousel from "./ui/carousel/Carousel";
 import Category from "./ui/dropdown/Category";
 import Footer from "./ui/footer/Footer";
 import Header from "./ui/header/Header";
-import Live from "./ui/live/Live";
+import Live from "./ui/part/Live";
 import LoginAd from "./ui/login/LoginAd";
 
 function App() {
